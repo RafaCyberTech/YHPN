@@ -205,7 +205,16 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: .5rem; }
 .contact-card h3 { font-size: 1.05rem; color: var(--orange-dark); }
 .contact-card p { margin: 0; }
 .contact-card a { font-weight: 700; word-break: break-word; }
-.contact-card .btn { margin-top: 1rem; }
+.contact-icon {
+  display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px;
+  flex: none; margin-top: 1px; color: var(--blue); transition: color .2s;
+}
+.contact-icon:hover { color: var(--orange-dark); }
+.contact-icon:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+.contact-icon svg { width: 22px; height: 22px; }
+.contact-icon svg path, .contact-icon svg circle { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.contact-icon.facebook-icon svg path { fill: currentColor; stroke: none; }
+.contact-line { display: flex; align-items: flex-start; gap: .65rem; }
 
 /* Rodapé */
 footer { background: var(--blue-dark); color: #fff; padding: 2rem 0 1rem; }
